@@ -1,0 +1,97 @@
+/* Style sheet for the competitions pictures page of the pROVe website
+
+   Creator: Ben Green
+   Date: 12/21/14
+
+   Filename: pics_styles.css
+   Supporting files: prove_styles.css
+*/
+
+
+@import url("prove_styles.css");
+
+
+/* Section styles */
+
+section {
+  margin: 0px auto 30px;
+  width: 80%;
+}
+
+@media (max-width : 700px) {
+  section {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width : 701px) {
+  section {
+    margin-top: 105px;
+  }
+}
+
+section img {
+  border: 1px solid gray;
+  width: 100%;
+}
+
+
+/* Heading styles */
+
+h1 {
+  background-color: #FF6A00;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+
+@media (max-width : 900px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width : 901px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  margin-bottom: 10px;
+  margin-left: 1px;
+}
+
+
+/* Table styles */
+
+table {
+  margin-bottom: 10px;
+}
+
+th {
+  padding-right: 1%;
+}
+
+td {
+  padding-left: 1%;
+}
+
+table.two td,th {
+  width: 48%;
+}
+
+table.left th {
+  width: 60%;
+}
+
+table.right th {
+  padding-left: 1%;
+  padding-right: 0%;
+  width: 60%;
+}
+
+table.right td {
+  padding-left: 0%;
+  padding-right: 1%;
+}

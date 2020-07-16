@@ -1,0 +1,96 @@
+/* Style sheet for the videos page of the pROVe website
+
+   Creator: Ben Green
+   Date: 1/7/15
+
+   Filename: vids_styles.css
+   Supporting files: prove_styles.css
+*/
+
+
+@import url("prove_styles.css");
+
+
+/* Section and Article Styles */
+
+section {
+  margin: 0px auto;
+}
+
+@media (min-width : 701px) {
+  section {
+    margin-top: 105px;
+  }
+}
+
+@media (max-width : 700px) {
+  section {
+    margin-top: 80px;
+  }
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+h1 {
+  background-color: #FF6A00;
+  font-size: 1.6em;
+  margin: 0px auto 10px;
+  padding: 2px;
+}
+
+@media (max-width : 500px) {
+  iframe {
+    height: 180px;
+    width: 320px;
+  }
+
+  h1 {
+    width: 320px;
+  }
+}
+
+@media (min-width : 501px) {
+  iframe {
+    height: 225px;
+    width: 400px;
+  }
+
+  h1 {
+    width: 400px;
+  }
+}
+
+@media (min-width : 701px) {
+  iframe {
+    height: 315px;
+    width: 560px;
+  }
+
+  h1 {
+    width: 560px;
+  }
+}
+
+@media (min-width : 901px) {
+  iframe {
+    height: 360px;
+    width: 640px;
+  }
+
+  h1 {
+    width: 640px;
+  }
+}
+
+@media (min-width : 1101px) {
+  iframe {
+    height: 480px;
+    width: 853px;
+  }
+
+  h1 {
+    width: 853px;
+  }
+}

@@ -1,0 +1,209 @@
+/* Style sheet for the home page of the pROVe website
+
+   Creator: Ben Green
+   Date: 11/15/14
+
+   Filename: home_styles.css
+   Supporting files: prove_styles.css
+*/
+
+
+@import url("prove_styles.css");
+
+
+/* Header Style */
+
+header nav ul li.home a {
+  background-color: #F96300;
+  border: 3px inset #59A7F0;
+}
+
+@media (max-width : 400px) {
+  header nav ul li.home a {
+    height: 35px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width : 401px) {
+  header nav ul li.home a {
+    height: 45px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width : 701px) {
+  header nav ul li.home a {
+    height: 70px;
+    line-height: 70px;
+  }
+}
+
+
+/* General Section and Article Styles */
+
+section article {
+  display: block;
+  margin: 0px auto 30px;
+  padding: 10px 15px 15px;
+  width: 75%;
+}
+
+section article p {
+  font-size: 1.1em;
+  margin-top: 15px;
+  text-align: left;
+}
+
+
+/* Article Styles */
+
+article.prove {
+  background-color: #FF6A00;
+
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+
+article.prove p {
+  color: #00137F;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+article.mate {
+  background-color: #59A7F0;
+
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+
+article.mate p {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+cite {
+  font-size: 0.95em;
+}
+
+
+/* Heading Styles */
+
+article h2 {
+  font-size: 1.8em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+article.prove h2 {
+  color: #371700;
+}
+
+article.mate h2 {
+  color: #132434;
+}
+
+section.table h2 {
+  background-color: #FF6A00;
+  font-size: 1.7em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+  width: 65%;
+}
+
+@media (max-width: 700px) {
+  section.table h2 {
+    font-size: 1.1em;
+  }
+}
+
+
+/* Poseidon Picture Styles */
+
+section.poseidonpic h1 {
+  margin: 0px auto;
+}
+
+section.poseidonpic img {
+  display: block;
+  border: 5px ridge #00106B;
+  width: 100%;
+}
+
+section.poseidonpic h3 {
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+@media (max-width : 1000px) {
+  section.poseidonpic h1 {
+    width: 70%;
+  }
+}
+
+@media (min-width : 1001px) {
+  section.poseidonpic h1 {
+    width: 50%;
+  }
+}
+
+
+/* Table Styles */
+
+table {
+  border-style: hidden;
+  border-collapse: collapse;
+  margin: 15px auto;
+  width: 65%;
+}
+
+table td {
+  background-color: #FFF4AF;
+}
+
+table th {
+  background-color: #59A7F0;
+}
+
+table td, th {
+  border: 2px solid #FF6A00;
+  font-family: Times New Roman, sans-serif;
+}
+
+/* Team Picture Styles */
+
+@media (max-width : 700px) {
+  section.teampic h1 {
+    margin: 80px auto 5px;
+  }
+}
+
+@media (min-width : 701px) {
+  section.teampic h1 {
+    margin: 105px auto 5px;
+  }
+}
+
+@media (max-width : 1000px) {
+  section.teampic h1 {
+    width: 70%;
+  }
+}
+
+@media (min-width : 1001px) {
+  section.teampic h1 {
+    width: 50%;
+  }
+}
+
+section.teampic img {
+  display: block;
+  border: 5px ridge #00106B;
+  width: 100%;
+}

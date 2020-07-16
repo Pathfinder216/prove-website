@@ -1,0 +1,167 @@
+/* Style sheet for the team bio page of the pROVe website
+
+   Creator: Ben Green
+   Date: 11/16/14
+
+   Filename: team_styles.css
+   Supporting files: prove_styles.css
+*/
+
+
+@import url("prove_styles.css");
+
+
+/* Section Styles */
+
+section.year {
+  margin-top: 50px;
+}
+
+#top {
+  margin-top: 105px;
+}
+
+/* Header Style */
+
+header nav ul li.team a {
+  background-color: #F96300;
+  border: 3px inset #59A7F0;
+}
+
+@media (max-width : 400px) {
+  header nav ul li.team a {
+    height: 35px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width : 401px) {
+  header nav ul li.team a {
+    height: 45px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width : 701px) {
+  header nav ul li.team a {
+    height: 70px;
+    line-height: 70px;
+  }
+}
+
+
+/* Team Picture Style */
+
+article.teampic p {
+  margin: 0px auto 20px;
+}
+
+article.teampic h1 {
+  margin: 0px auto;
+}
+
+@media (max-width : 1000px) {
+  article.teampic p {
+    font-size: 0.8em;
+    width: 70%;
+  }
+
+  article.teampic h1 {
+    width: 70%;
+  }
+}
+
+@media (min-width : 1001px) {
+  article.teampic p {
+    width: 50%;
+  }
+
+  article.teampic h1 {
+    width: 50%;
+  }
+}
+
+article.teampic img {
+  display: block;
+  border: 5px ridge #00106B;
+  width: 100%;
+}
+
+
+/* Bio Section Styles */
+
+article p.update {
+  margin-top: 5px;
+}
+
+#team {
+  background-color: #FF6A00;
+  font-size: 1.7em;
+  margin: 0px auto 20px;
+  width: 80%;
+}
+
+article.bio {
+  clear: left;
+  margin: 0px auto 30px;
+  width: 80%;
+}
+
+h3 img {
+  display: block;
+  border: 1px solid #00106B;
+  float: left;
+  margin-right: 10px;
+}
+
+h4 {
+  text-align: left;
+}
+
+article.bio p {
+  text-align: left;
+}
+
+@media (max-width : 1000px) {
+  h3 img {
+    width: 75px;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  article.bio {
+    min-height: 93px;
+  }
+
+  article.bio p {
+    font-size: 0.9em;
+  }
+
+  article.bio p.update {
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width : 1001px) {
+  h3 img {
+    width: 100px;
+  }
+
+  h4 {
+    font-size: 1.1em;
+  }
+
+  article.bio {
+    min-height: 123px;
+  }
+
+  article.bio p {
+    font-size: 1em;
+  }
+
+  article.bio p.update {
+    font-size: 0.8em;
+  }
+}
