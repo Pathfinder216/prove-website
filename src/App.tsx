@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from "./pages/Home.tsx"
+import Team from "./pages/Team.tsx"
 
 function App() {
 
@@ -14,8 +15,8 @@ function App() {
       <main className="flex-1 max-w-5xl mx-auto p-4">
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/team" element={<Team />} />
-          <Route path="/media" element={<Media />} /> */}
+          <Route path="/team" element={<Team />} />
+          {/* <Route path="/media" element={<Media />} /> */}
         </Routes>
       </main>
 
