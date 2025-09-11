@@ -20,7 +20,7 @@ function Header() {
   }
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-prove-primary shadow-md sticky top-0 z-50">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -41,14 +41,14 @@ function Header() {
                   href={link.href}
                   className={`group relative font-medium transition-colors pb-1
                     ${isActive
-                      ? "text-prove-primary"
-                      : "text-prove-accent hover:text-prove-primary"
+                      ? "text-prove-accent"
+                      : "text-slate-100 hover:text-prove-accent"
                     }
                   `}
                 >
                   {link.label}
                   <span
-                    className={`absolute left-0 -bottom-0.5 h-0.5 bg-prove-primary
+                    className={`absolute left-0 -bottom-0.5 h-0.5 bg-prove-accent
                       transition-all duration-300
                       ${isActive ? "w-full" : "w-0 group-hover:w-full"}
                     `}
@@ -64,8 +64,8 @@ function Header() {
             onClick={() => setOpen(!open)}
           >
             {open
-              ? <X className="h-6 w-6 text-prove-accent" />
-              : <Menu className="h-6 w-6 text-prove-accent" />
+              ? <X className="h-6 w-6 text-slate-100" />
+              : <Menu className="h-6 w-6 text-slate-100" />
             }
           </button>
         </div>
@@ -81,8 +81,8 @@ function Header() {
                   <a
                     href={link.href}
                     className={`block py-2 px-3 rounded-md ${(currentPath === link.href)
-                      ? "bg-prove-primary text-white"
-                      : "text-prove-accent hover:bg-prove-primary hover:text-white"
+                      ? "bg-prove-accent text-slate-100"
+                      : "text-slate-100 hover:bg-prove-accent hover:text-slate-100"
                       }`}
                     onClick={() => setOpen(false)}
                   >

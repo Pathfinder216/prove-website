@@ -1,78 +1,69 @@
-import { useLayoutEffect, useRef } from "react"
 import RovIcon from "../assets/RovIcon.png"
-import "./Footer.css"
 
 const email = import.meta.env.VITE_EMAIL
 const fb = import.meta.env.VITE_FB
 const twitter = import.meta.env.VITE_TWITTER
-
-function Separator() {
-  return (
-    <span
-      className="separator"
-      aria-hidden="true"
-      style={{ backgroundImage: `url(${RovIcon})` }}
-    />
-  )
-}
+const macungie = import.meta.env.VITE_MACUNGIE
 
 export default function Footer() {
-  const ref = useRef<HTMLElement | null>(null)
-
-  useLayoutEffect(() => {
-    const el = ref.current
-    if (!el) return
-
-    const update = () => {
-      // mark JS-ready (so CSS can show separators after first calc)
-      el.classList.add("js-ready")
-      const seps = Array.from(el.querySelectorAll<HTMLSpanElement>(".separator"))
-
-      // reset state
-      seps.forEach(s => s.classList.remove("is-line-start"))
-
-      // hide any separator that starts a new wrapped row
-      seps.forEach(sep => {
-        const prev = sep.previousElementSibling as HTMLElement | null
-        if (!prev) {
-          sep.classList.add("is-line-start")
-          return
-        }
-        // If separator has a greater offsetTop than its previous item,
-        // it wrapped onto a new line -> hide it.
-        if (sep.offsetTop > prev.offsetTop) {
-          sep.classList.add("is-line-start")
-        }
-      })
-    }
-
-    // Run once, and on resize/container size changes
-    update()
-    const ro = new ResizeObserver(() => update())
-    ro.observe(el)
-    window.addEventListener("resize", update)
-
-    return () => {
-      ro.disconnect()
-      window.removeEventListener("resize", update)
-    }
-  }, [])
-
   return (
-    <footer ref={ref} className="footer">
-      <a href={`mailto:${email}`} className="footer-item">
-        {email}
-      </a>
-      <Separator />
-      <a href={fb} target="_blank" rel="noreferrer" className="footer-item">
-        Facebook
-      </a>
-      <Separator />
-      <a href={twitter} target="_blank" rel="noreferrer" className="footer-item">
-        Twitter
-      </a>
-      <Separator />
-      <span className="footer-item">Macungie, Pennsylvania</span>
+    <footer className="bg-prove-primary border-t border-gray-200 mt-12 text-slate-100">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6">
+        <div className={`flex flex-col justify-center items-center gap-y-3 sm:flex-row
+          sm:justify-center sm:items-center sm:gap-x-4 sm:gap-y-0`}>
+          <a
+            href={`mailto:${email}`}
+            className="hover:text-prove-accent transition-colors font-medium"
+          >
+            {email}
+          </a>
+
+          <img
+            src={RovIcon}
+            alt=""
+            className="hidden sm:inline-block h-4 sm:h-5 w-auto"
+          />
+
+          <a
+            href={fb}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-prove-accent transition-colors font-medium"
+          >
+            Facebook
+          </a>
+
+          <img
+            src={RovIcon}
+            alt=""
+            className="hidden sm:inline-block h-4 sm:h-5 w-auto"
+          />
+
+          <a
+            href={twitter}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-prove-accent transition-colors font-medium"
+          >
+            Twitter
+          </a>
+
+          <img
+            src={RovIcon}
+            alt=""
+            className="hidden sm:inline-block h-4 sm:h-5 w-auto"
+          />
+
+          <a
+            href={macungie}
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-prove-accent transition-colors font-medium"
+          >
+            Macungie, Pennsylvania
+          </a>
+        </div>
+      </div>
     </footer>
   )
 }
