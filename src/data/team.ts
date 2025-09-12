@@ -18,6 +18,27 @@ import Natalie14Img from "../assets/Headshots/Natalie_14.jpg"
 import Stephen14Img from "../assets/Headshots/Stephen_14.jpg"
 import Tim14Img from "../assets/Headshots/Tim_14.jpg"
 
+// 2012-13
+import Team13Img from "../assets/Team_2012-13.jpg"
+import Ben13Img from "../assets/Headshots/Ben_13.jpg"
+import David13Img from "../assets/Headshots/David_13.jpg"
+import Hannah13Img from "../assets/Headshots/Hannah_13.jpg"
+import Matt13Img from "../assets/Headshots/Matt_13.jpg"
+import Micah13Img from "../assets/Headshots/Micah_13.jpg"
+import Natalie13Img from "../assets/Headshots/Natalie_13.jpg"
+import Stephen13Img from "../assets/Headshots/Stephen_13.jpg"
+
+// 2011-12
+import Team12Img from "../assets/Team_2011-12.jpg"
+import David12Img from "../assets/Headshots/David_12.jpg"
+import Hannah12Img from "../assets/Headshots/Hannah_12.jpg"
+import Matt12Img from "../assets/Headshots/Matt_12.jpg"
+import Micah12Img from "../assets/Headshots/Micah_12.jpg"
+import Natalie12Img from "../assets/Headshots/Natalie_12.jpg"
+import Stephen12Img from "../assets/Headshots/Stephen_12.jpg"
+import Thomas12Img from "../assets/Headshots/Thomas_12.jpg"
+import Tim12Img from "../assets/Headshots/Tim_12.jpg"
+
 export interface TeamMember {
   id: string;
   name: string;
@@ -160,6 +181,172 @@ export const teamData: TeamYear[] = [
         yearsOnTeam: "2nd",
         role: "Tool Fabrication",
         bio: "Timothy Gahman is a 15-year-old Sophomore from Pennsylvania. Tim has been on the team for two years. He enjoys golf, hunting, gaming, karate, and snowboarding in his spare time. In the future, he wishes to pursue a career in engineering, possibly biomedical engineering.",
+      }
+    ]
+  },
+  {
+    year: "2012-2013",
+    img: Team13Img,
+    imgMemberOrder: [
+      "matt_13",
+      "david_13",
+      "micah_13",
+      "hannah_13",
+      "natalie_13",
+      "ben_13",
+      "stephen_13"
+    ],
+    members: [
+      {
+        id: "david_13",
+        name: "David Sampsell (CEO)",
+        img: David13Img,
+        grade: "11th",
+        yearsOnTeam: "2nd",
+        role: "Design Engineer",
+        bio: "David Sampsell is a student.",
+      },
+      {
+        id: "micah_13",
+        name: "Micah Smith",
+        img: Micah13Img,
+        grade: "12th",
+        yearsOnTeam: "2nd",
+        role: "Design Engineer",
+        bio: "Micah Smith is a student.",
+      },
+      {
+        id: "matt_13",
+        name: "Matthew Buonanno",
+        img: Matt13Img,
+        grade: "12th",
+        yearsOnTeam: "2nd",
+        role: "Mentor Programmer",
+        bio: "Matthew Buonanno is a student.",
+      },
+      {
+        id: "stephen_13",
+        name: "Stephen Gahman",
+        img: Stephen13Img,
+        grade: "11th",
+        yearsOnTeam: "2nd",
+        role: "Design Engineer",
+        bio: "Stephen Gahman is a student.",
+      },
+      {
+        id: "natalie_13",
+        name: "Natalie Sampsell",
+        img: Natalie13Img,
+        grade: "9th",
+        yearsOnTeam: "2nd",
+        role: "Tech Report Editor",
+        bio: "Natalie Sampsell is a 14-year-old freshman. She enjoys acting, reading, listening to music, playing piano, skiing, and playing sports. Participating in the MATE Competition has helped Natalie discover her interest in engineering, and she hopes to pursue a STEM career in college, with a possible major in Computer Science.",
+      },
+      {
+        id: "hannah_13",
+        name: "Hannah Smith",
+        img: Hannah13Img,
+        grade: "10th",
+        yearsOnTeam: "2nd",
+        role: "Graphic Design",
+        bio: "Hannah Smith is a 15 year-old sophomore in high school. Her role on the ROV team is as graphic designer. In her spare time, she enjoys playing sports, hanging out with friends, watching movies, playing piano and guitar, and taking pictures. In the fall of 2015, Hannah hopes to attend Liberty University to pursue a degree in nursing.",
+      },
+      {
+        id: "ben_13",
+        name: "Benjamin Green",
+        img: Ben13Img,
+        grade: "10th",
+        yearsOnTeam: "1st",
+        role: "Programmer",
+        bio: "I have been homeschooled since Kindergarten. Some of my hobbies include: Ultimate Frisbee, board games, airsoft, acting, and Netflix. Since starting a Computer Programming class this year, I have become interested in Computer Science, which I am considering as a major. Some of my nicknames include: Kreg, Benjamin Blue, and The Gazelle.",
+      }
+    ]
+  },
+  {
+    year: "2011-2012",
+    img: Team12Img,
+    imgMemberOrder: [
+      "david_12",
+      "natalie_12",
+      "hannah_12",
+      "micah_12",
+      "stephen_12",
+      "thomas_12",
+      "tim_12",
+      "matt_12"
+    ],
+    members: [
+      {
+        id: "david_12",
+        name: "David Sampsell (CEO)",
+        img: David12Img,
+        grade: "10th",
+        yearsOnTeam: "1st",
+        role: "Design Engineer",
+        bio: "David Sampsell is a student.",
+      },
+      {
+        id: "micah_12",
+        name: "Micah Smith",
+        img: Micah12Img,
+        grade: "11th",
+        yearsOnTeam: "1st",
+        role: "Design Engineer",
+        bio: "Micah Smith is a student.",
+      },
+      {
+        id: "matt_12",
+        name: "Matthew Buonanno",
+        img: Matt12Img,
+        grade: "11th",
+        yearsOnTeam: "1st",
+        role: "Programmer",
+        bio: "Matthew Buonanno is a student.",
+      },
+      {
+        id: "stephen_12",
+        name: "Stephen Gahman",
+        img: Stephen12Img,
+        grade: "10th",
+        yearsOnTeam: "1st",
+        role: "Electronics Engineer",
+        bio: "Stephen Gahman is a student.",
+      },
+      {
+        id: "natalie_12",
+        name: "Natalie Sampsell",
+        img: Natalie12Img,
+        grade: "8th",
+        yearsOnTeam: "1st",
+        role: "Tech Report Editor",
+        bio: "Natalie Sampsell is a 13-year-old middle-schooler. She enjoys acting, reading, listening to music, playing piano, skiing, and playing sports. She hopes to pursue a STEM career in college, with a possible major in Computer Science.",
+      },
+      {
+        id: "hannah_12",
+        name: "Hannah Smith",
+        img: Hannah12Img,
+        grade: "9th",
+        yearsOnTeam: "1st",
+        role: "Graphic Design",
+        bio: "Hannah Smith is a 14 year-old freshman in high school. Her role on the ROV team is as graphic designer. In her spare time, she enjoys playing sports, hanging out with friends, watching movies, playing piano and guitar, and taking pictures. In the fall of 2015, Hannah hopes to attend Liberty University to pursue a degree in nursing.",
+      },
+      {
+        id: "tim_12",
+        name: "Timothy Gahman",
+        img: Tim12Img,
+        grade: "8th",
+        yearsOnTeam: "1st",
+        role: "Safety Officer",
+        bio: "Timothy Gahman is a 13-year-old middle-schooler from Pennsylvania. Tim has been on the team for two years. He enjoys golf, hunting, gaming, karate, and snowboarding in his spare time. In the future, he wishes to pursue a career in engineering, possibly biomedical engineering.",
+      },
+      {
+        id: "thomas_12",
+        name: "Thomas Buonanno",
+        img: Thomas12Img,
+        grade: "8th",
+        yearsOnTeam: "1st",
+        role: "Researcher",
+        bio: "Thomas Buonanno is currently 13 years old and has been on the team for two years. His contributions to the team involve researching and aiding the older team members as they required. He enjoys acting, playing the piano, playing flag football, and listening to music. He thinks he would like to pursue some field in engineering or some other science-based career.",
       }
     ]
   }
