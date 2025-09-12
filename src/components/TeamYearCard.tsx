@@ -23,17 +23,17 @@ const TeamYearCard: React.FC<TeamYearProps> = ({ yearData }) => {
         <img
           src={img}
           alt={`Team photo ${year}`}
-          className="w-full max-w-lg rounded-lg shadow-md"
+          className="w-full rounded-lg shadow-md"
         />
         <p className="flex flex-wrap justify-center gap-2 text-sm">
           From left to right:
-          {orderedMembers.map(member => (
+          {orderedMembers.map((member, i) => (
             <a
               key={member.id}
               href={`#${member.id}`}
-              className="text-blue-600 hover:underline"
+              className="text-prove-accent hover:underline"
             >
-              {member.name}
+              {member.name}{i < orderedMembers.length - 1 && ","}
             </a>
           ))}
         </p>
