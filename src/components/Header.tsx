@@ -13,7 +13,7 @@ const links = [
 ]
 
 function Header() {
-  const [open, setOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   const currentPath = useLocation().pathname
 
@@ -58,11 +58,11 @@ function Header() {
           {/* Mobile menu toggle */}
           <button
             className="md:hidden p-2 rounded-md hover:bg-gray-100"
-            onClick={() => setOpen(!open)}
+            onClick={() => setIsOpen(!isOpen)}
           >
-            {open
-              ? <X className="h-6 w-6 text-slate-100" />
-              : <Menu className="h-6 w-6 text-slate-100" />
+            {isOpen
+              ? <X className="h-6 w-6 text-prove-accent" />
+              : <Menu className="h-6 w-6 text-prove-accent" />
             }
           </button>
         </div>
@@ -70,8 +70,8 @@ function Header() {
 
       {/* Mobile nav panel */}
       {
-        open && (
-          <nav className="md:hidden bg-white border-t border-gray-200 shadow-sm">
+        isOpen && (
+          <nav className="md:hidden bg-prove-primary border-gray-200 shadow-sm">
             <ul className="flex flex-col p-4 space-y-2">
               {links.map(link => (
                 <li key={link.path}>
@@ -81,7 +81,7 @@ function Header() {
                       ? "bg-prove-accent text-slate-100"
                       : "text-slate-100 hover:bg-prove-accent hover:text-slate-100"
                       }`}
-                    onClick={() => setOpen(false)}
+                    onClick={() => setIsOpen(false)}
                   >
                     {link.label}
                   </Link>
