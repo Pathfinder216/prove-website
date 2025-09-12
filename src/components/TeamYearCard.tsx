@@ -16,7 +16,7 @@ const TeamYearCard: React.FC<TeamYearProps> = ({ yearData }) => {
 
   return (
     <section className="space-y-6">
-      <h2 className="text-2xl font-bold bg-prove-primary text-black">{year}</h2>
+      <h2 className="text-2xl font-bold bg-prove-primary rounded text-black">{year}</h2>
 
       {/* Team photo with member links */}
       <article className="flex flex-col items-center space-y-2">
