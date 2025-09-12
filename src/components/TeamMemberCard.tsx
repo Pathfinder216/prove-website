@@ -9,7 +9,8 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
   return (
     <article
       id={member.id}
-      className="flex flex-col items-center text-center bg-white p-4 rounded-lg shadow-md space-y-2"
+      className={`flex flex-col items-center text-center bg-white p-4 rounded-lg
+        shadow-md space-y-2 scroll-mt-16`}
     >
       <img
         src={member.img}
