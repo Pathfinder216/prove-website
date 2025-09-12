@@ -9,8 +9,8 @@ export default function Footer() {
   return (
     <footer className="bg-prove-primary border-t border-gray-200 mt-12 text-slate-100">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6">
-        <div className={`flex flex-col justify-center items-center gap-y-3 sm:flex-row
-          sm:justify-center sm:items-center sm:gap-x-4 sm:gap-y-0`}>
+        <div className={`flex flex-col justify-center items-center gap-y-3 md:flex-row
+          md:justify-center md:items-center md:gap-x-4 md:gap-y-0`}>
           <a
             href={`mailto:${email}`}
             className="hover:text-prove-accent transition-colors font-medium"
@@ -21,7 +21,7 @@ export default function Footer() {
           <img
             src={RovIcon}
             alt=""
-            className="hidden sm:inline-block h-4 sm:h-5 w-auto"
+            className="hidden md:inline-block h-5 w-auto"
           />
 
           <a
@@ -36,7 +36,7 @@ export default function Footer() {
           <img
             src={RovIcon}
             alt=""
-            className="hidden sm:inline-block h-4 sm:h-5 w-auto"
+            className="hidden md:inline-block h-5 w-auto"
           />
 
           <a
@@ -51,7 +51,7 @@ export default function Footer() {
           <img
             src={RovIcon}
             alt=""
-            className="hidden sm:inline-block h-4 sm:h-5 w-auto"
+            className="hidden md:inline-block h-5 w-auto"
           />
 
           <a
