@@ -22,7 +22,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
         <p className="text-xs text-gray-500">{member.updated}</p>
       )}
       <p className="text-xs font-medium text-gray-600">
-        {member.grade} Grade, {member.yearsOnTeam} year{member.yearsOnTeam > 1 ? "s" : ""} on pROVe, {member.role}
+        {member.grade} Grade, {member.yearsOnTeam} year on pROVe, {member.role}
       </p>
     </article>
   );
