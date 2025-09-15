@@ -66,7 +66,7 @@ function TeamYearCard({ yearData }: TeamYearProps) {
         <AccordionTrigger className="text-xl font-semibold">
           {yearData.year}
         </AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="px-4 py-2 text-gray-700">
           <section className="space-y-6 mt-3">
             {/* Team photo with member links */}
             <article className="flex flex-col items-center space-y-2">
