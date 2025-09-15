@@ -4,7 +4,7 @@ import TeamYearCard from "../components/TeamYearCard";
 
 const TeamPage: React.FC = () => {
   return (
-    <div className="container mx-auto p-4 space-y-12">
+    <div className="container mx-auto p-4 space-y-4">
       {teamData.map(year => (
         <TeamYearCard key={year.year} yearData={year} />
       ))}
