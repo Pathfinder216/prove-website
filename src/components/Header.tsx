@@ -22,12 +22,12 @@ function Header() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="Home.tsx" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <img src={ProveLogo} alt="pROVe logo" className="h-10 w-auto" />
             <span className="font-bold text-lg text-prove-accent hidden sm:inline">
               Pennsylvania ROV Engineers
             </span>
-          </a>
+          </Link>
 
           {/* Desktop nav */}
           <nav className="hidden md:flex gap-6">
