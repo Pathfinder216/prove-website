@@ -5,7 +5,7 @@ import { Accordion } from "@/components/ui/accordion"
 
 const TeamPage: React.FC = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto">
       <Accordion type="multiple" className="space-y-1" defaultValue={[teamData[0].year]}>
         {teamData.map(year => (
           <TeamYearCard key={year.year} yearData={year} />
