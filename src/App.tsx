@@ -8,6 +8,7 @@ import Poseidon from "./pages/Poseidon.tsx"
 import Team from "./pages/Team.tsx"
 import Media from "./pages/Media.tsx"
 import Comps from "./pages/media/Comps.tsx"
+import Build from "./pages/media/Build.tsx"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/media" element={<Media />} />
           <Route path="/media/comps" element={<Comps />} />
+          <Route path="/media/build" element={<Build />} />
           <Route path="/poseidon" element={<Poseidon />} />
         </Routes>
       </main>
