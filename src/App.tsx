@@ -10,6 +10,7 @@ import Media from "./pages/Media.tsx"
 import Comps from "./pages/media/Comps.tsx"
 import Build from "./pages/media/Build.tsx"
 import Other from "./pages/media/Other.tsx"
+import Videos from "./pages/media/Videos.tsx"
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/media/comps" element={<Comps />} />
           <Route path="/media/build" element={<Build />} />
           <Route path="/media/other" element={<Other />} />
+          <Route path="/media/videos" element={<Videos />} />
           <Route path="/poseidon" element={<Poseidon />} />
         </Routes>
       </main>

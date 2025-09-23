@@ -64,7 +64,7 @@ export default function Media() {
       />
 
       <MediaCard
-        href="/media/vids"
+        href="/media/videos"
         imgSrc={VidsYoutube2Img}
         imgAlt="Mk. 3 in water"
         title="Videos"
