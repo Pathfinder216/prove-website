@@ -6,6 +6,8 @@ import Footer from './components/Footer'
 import Home from "./pages/Home.tsx"
 import Poseidon from "./pages/Poseidon.tsx"
 import Team from "./pages/Team.tsx"
+import Media from "./pages/Media.tsx"
+import Comps from "./pages/media/Comps.tsx"
 
 function App() {
 
@@ -17,7 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />
-          {/* <Route path="/media" element={<Media />} /> */}
+          <Route path="/media" element={<Media />} />
+          <Route path="/media/comps" element={<Comps />} />
           <Route path="/poseidon" element={<Poseidon />} />
         </Routes>
       </main>
