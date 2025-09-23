@@ -9,7 +9,7 @@ const links = [
   { path: "/team", label: "Team" },
   { path: "/media", label: "Media" },
   { path: "/poseidon", label: "Poseidon" },
-  { path: "/finance", label: "Finance" },
+  { path: "/data", label: "Data" },
 ]
 
 function Header() {
