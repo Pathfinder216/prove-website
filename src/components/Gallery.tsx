@@ -75,12 +75,17 @@ export default function Gallery({ title, images }: GalleryProps) {
               <ChevronLeft size={40} />
             </button>
 
-            {/* Main image */}
-            <img
-              src={images[lightboxIndex].src}
-              alt={images[lightboxIndex].alt}
-              className="max-h-[80vh] max-w-[80vw] object-contain"
-            />
+            {/* Image + caption */}
+            <div className="flex flex-col items-center">
+              <img
+                src={images[lightboxIndex].src}
+                alt={images[lightboxIndex].alt}
+                className="max-h-[80vh] max-w-[80vw] object-contain"
+              />
+              <p className="mt-3 text-white text-center text-lg max-w-[80vw]">
+                {images[lightboxIndex].alt}
+              </p>
+            </div>
 
             {/* Next button (viewport right) */}
             <button
