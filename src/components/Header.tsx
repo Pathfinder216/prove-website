@@ -32,7 +32,12 @@ function Header() {
           {/* Desktop nav */}
           <nav className="hidden md:flex gap-6">
             {links.map(link => {
-              const isCurrentPage = currentPath === link.path
+              const isCurrentPage = (
+                (link.path === "/")
+                  ? currentPath === "/"
+                  : currentPath.startsWith(link.path)
+              );
+
               return (
                 <Link
                   to={link.path}
