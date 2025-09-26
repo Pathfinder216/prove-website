@@ -41,6 +41,7 @@ function Header() {
               return (
                 <Link
                   to={link.path}
+                  key={link.path}
                   className={`group relative font-medium transition-colors pb-1
                     ${isCurrentPage
                       ? "text-prove-accent"
