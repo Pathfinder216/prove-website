@@ -1,30 +1,31 @@
-import React, { type JSX } from "react";
+import { type JSX } from "react"
+
 import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from "@/components/ui/accordion";
+} from "@/components/ui/accordion"
 
-// Reusable section component
-interface PoseidonCardProps {
+type PoseidonCardProps = {
   title: string;
-  mainImage: { src: string; link?: string; alt: string };
+  mainImage: {
+    src: string;
+    link?: string;
+    alt: string
+  };
   paragraphs: (string | JSX.Element)[];
   gallery: string[];
-}
+};
 
-const PoseidonCard: React.FC<PoseidonCardProps> = ({
-  title,
-  mainImage,
-  paragraphs,
-  gallery,
-}) => {
+const PoseidonCard = (
+  { title, mainImage, paragraphs, gallery }: PoseidonCardProps
+): JSX.Element => {
   return (
     <AccordionItem value={title}>
       <AccordionTrigger className="text-xl font-semibold">{title}</AccordionTrigger>
       <AccordionContent className="px-4 py-2 text-gray-700">
         <section className="space-y-6">
-          <article className="space-y-6">
+          <article className="space-y-6">  {/* I don't need this extra spacing spec, do I? */}
             <a href={mainImage.link ?? mainImage.src} className="block">
               <img
                 src={mainImage.src}

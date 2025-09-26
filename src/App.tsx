@@ -1,20 +1,20 @@
-import './App.css'
+import type { JSX } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Home from "./pages/Home.tsx"
-import Poseidon from "./pages/Poseidon.tsx"
-import Team from "./pages/Team.tsx"
-import Media from "./pages/Media.tsx"
-import Comps from "./pages/media/Comps.tsx"
-import Build from "./pages/media/Build.tsx"
-import Other from "./pages/media/Other.tsx"
-import Videos from "./pages/media/Videos.tsx"
-import Data from "./pages/Data.tsx"
+import "@/App.css"
+import Build from "@/pages/media/Build.tsx"
+import Comps from "@/pages/media/Comps.tsx"
+import Data from "@/pages/Data.tsx"
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import Home from "@/pages/Home.tsx"
+import Poseidon from "@/pages/Poseidon.tsx"
+import Media from "@/pages/Media.tsx"
+import Other from "@/pages/media/Other.tsx"
+import Team from "@/pages/Team.tsx"
+import Videos from "@/pages/media/Videos.tsx"
 
-function App() {
-
+const App = (): JSX.Element => {
   return (
     <Router>
       <Header />
@@ -35,7 +35,7 @@ function App() {
 
       <Footer />
     </Router>
-  )
-}
+  );
+};
 
-export default App
+export default App;

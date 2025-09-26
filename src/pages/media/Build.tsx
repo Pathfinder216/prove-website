@@ -1,4 +1,6 @@
-import Gallery from "@/components/Gallery";
+import type { JSX } from "react"
+
+import Gallery from "@/components/Gallery"
 
 import AgarSamplerImg from "@/assets/Media/Build/Agar_Sampler.jpg"
 import CutFrameImg from "@/assets/Media/Build/Cut_Frame.jpg"
@@ -12,7 +14,7 @@ import TruckWiresImg from "@/assets/Media/Build/Truck_Wires.jpg"
 
 
 
-export default function Build() {
+const BuildPage = (): JSX.Element => {
   const images = [
     { src: AgarSamplerImg, alt: "Building agar sampler" },
     { src: CutFrameImg, alt: "Cutting the frame" },
@@ -26,4 +28,6 @@ export default function Build() {
   ];
 
   return <Gallery title="Building and Testing" images={images} />;
-}
+};
+
+export default BuildPage;

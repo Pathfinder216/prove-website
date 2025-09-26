@@ -1,10 +1,12 @@
-// src/Home.tsx
-import TeamPic from '../assets/Team_2013-14.jpg'
-import PoseidonPic from '../assets/Poseidon_Crate.jpg'
+import type { JSX } from "react"
 
-function Home() {
+import PoseidonPic from "@/assets/Poseidon_Crate.jpg"
+import TeamPic from "@/assets/Team_2013-14.jpg"
+
+const HomePage = (): JSX.Element => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
+      {/* Team Picture */}
       <a href={TeamPic} target="_blank" rel="noopener noreferrer">
         <img
           src={TeamPic}
@@ -87,6 +89,6 @@ function Home() {
       </section>
     </div>
   );
-}
+};
 
-export default Home
+export default HomePage;

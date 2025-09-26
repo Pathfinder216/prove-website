@@ -1,11 +1,13 @@
-import RovIcon from "../assets/RovIcon.png"
+import type { JSX } from "react"
 
-const email = import.meta.env.VITE_EMAIL
-const fb = import.meta.env.VITE_FB
-const twitter = import.meta.env.VITE_TWITTER
-const macungie = import.meta.env.VITE_MACUNGIE
+import RovIcon from "@/assets/RovIcon.png"
 
-export default function Footer() {
+const email = import.meta.env.VITE_EMAIL;
+const fb = import.meta.env.VITE_FB;
+const twitter = import.meta.env.VITE_TWITTER;
+const macungie = import.meta.env.VITE_MACUNGIE;
+
+const Footer = (): JSX.Element => {
   return (
     <footer className="bg-prove-primary border-t border-gray-200 mt-8 text-slate-100">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6">
@@ -65,5 +67,7 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
+
+export default Footer;

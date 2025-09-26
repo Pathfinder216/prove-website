@@ -1,8 +1,10 @@
-import { EmbeddedVideo } from "@/components/EmbeddedVideo";
+import type { JSX } from "react"
+
+import EmbeddedVideo from "@/components/EmbeddedVideo"
 
 import Mate2014Img from "@/assets/Mate2014.jpg"
 
-export default function VideosPage() {
+const VideosPage = (): JSX.Element => {
   const videos = [
     {
       title: "Night Testing with Mk. 3",
@@ -33,4 +35,6 @@ export default function VideosPage() {
       ))}
     </section>
   );
-}
+};
+
+export default VideosPage;

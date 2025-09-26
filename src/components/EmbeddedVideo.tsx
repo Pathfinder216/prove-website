@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { Play } from "lucide-react";
+import { useState, type JSX } from "react"
+import { Play } from "lucide-react"
 
-interface EmbeddedVideoProps {
+type EmbeddedVideoProps = {
   title: string;
   src: string;
   thumbnail: string;
-}
+};
 
-export function EmbeddedVideo({ title, src, thumbnail }: EmbeddedVideoProps) {
+const EmbeddedVideo = ({ title, src, thumbnail }: EmbeddedVideoProps): JSX.Element => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
@@ -42,4 +42,6 @@ export function EmbeddedVideo({ title, src, thumbnail }: EmbeddedVideoProps) {
       </div>
     </article>
   );
-}
+};
+
+export default EmbeddedVideo;

@@ -1,7 +1,8 @@
-import React from "react";
-import { results, type Results } from "@/data/competitionResults";
+import type { JSX } from "react"
 
-const ResultsTable: React.FC = () => {
+import { results, type Results } from "@/data/competitionResults"
+
+const ResultsTable = (): JSX.Element => {
   return (
     <div className="overflow-x-auto rounded-2xl shadow-md border border-gray-200 dark:border-gray-700">
       <table className="w-full text-sm text-left text-gray-700 dark:text-gray-300">

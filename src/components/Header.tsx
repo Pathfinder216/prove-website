@@ -1,8 +1,8 @@
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { useState, type JSX } from "react"
 import { Link, useLocation } from "react-router-dom"
+import { Menu, X } from "lucide-react"
 
-import ProveLogo from '../assets/Logo.jpg'
+import ProveLogo from "@/assets/Logo.jpg"
 
 const links = [
   { path: "/", label: "Home" },
@@ -10,12 +10,12 @@ const links = [
   { path: "/media", label: "Media" },
   { path: "/poseidon", label: "Poseidon" },
   { path: "/data", label: "Data" },
-]
+];
 
-function Header() {
-  const [isOpen, setIsOpen] = useState(false)
+const Header = (): JSX.Element => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  const currentPath = useLocation().pathname
+  const currentPath = useLocation().pathname;
 
   return (
     <header className="bg-prove-primary shadow-md sticky top-0 z-50">
@@ -105,8 +105,8 @@ function Header() {
           </nav>
         )
       }
-    </header >
-  )
-}
+    </header>
+  );
+};
 
-export default Header
+export default Header;

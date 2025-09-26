@@ -1,11 +1,10 @@
-// src/components/TeamMemberCard.tsx
-import type { TeamMember } from "../data/team";
+import type { JSX } from "react"
 
-interface TeamMemberCardProps {
-  member: TeamMember;
-}
+import type { TeamMember } from "@/data/team"
 
-const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
+type TeamMemberCardProps = { member: TeamMember; };
+
+const TeamMemberCard = ({ member }: TeamMemberCardProps): JSX.Element => {
   return (
     <article
       id={member.id}

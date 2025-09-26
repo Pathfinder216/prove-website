@@ -1,28 +1,26 @@
-import React from "react";
+import type { JSX } from "react"
 
+import PoseidonCard from "@/components/PoseidonCard"
 import { Accordion } from "@/components/ui/accordion"
-import PoseidonCard from "@/components/PoseidonCard";
 
 import CameraImg from "@/assets/Poseidon/Camera.jpg"
 import ElectronicsImg from "@/assets/Poseidon/Electronics.jpg"
 import FrameImg from "@/assets/Poseidon/Frame.jpg"
-import Mk1Img from "@/assets/Poseidon/Mk1.jpg"
 import Mk1HousingImg from "@/assets/Poseidon/Mk1_Housing.jpg"
+import Mk1Img from "@/assets/Poseidon/Mk1.jpg"
 import Mk1ManipImg from "@/assets/Poseidon/Mk1_Manip.jpg"
 import Mk1SideImg from "@/assets/Poseidon/Mk1_Side.jpg"
 import Mk2Img from "@/assets/Poseidon/Mk2.jpg"
 import Mk2UnfinImg from "@/assets/Poseidon/Mk2_Unfin.jpg"
-import Mk3Img from "@/assets/Poseidon/Mk3.jpg"
 import Mk3CenterImg from "@/assets/Poseidon/Mk3_Center.jpg"
+import Mk3Img from "@/assets/Poseidon/Mk3.jpg"
 import Mk3ManipFinImg from "@/assets/Poseidon/Mk3_Manip_Fin.jpg"
 import Mk3ManipImg from "@/assets/Poseidon/Mk3_Manip.jpg"
 import Mk3UnfinImg from "@/assets/Poseidon/Mk3_Unfin.jpg"
 import PressureHousingImg from "@/assets/Poseidon/Pressure_Housing.jpg"
 
-
-
 // Page that uses the component
-const PoseidonPage: React.FC = () => {
+const PoseidonPage = (): JSX.Element => {
   return (
     <main className="max-w-6xl mx-auto">
       <Accordion

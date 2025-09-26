@@ -1,8 +1,11 @@
-import { budgets } from "@/data/budget";
-import { BudgetTable } from "@/components/BudgetTable";
-import ResultsTable from "@/components/ResultsTable";
+import type { JSX } from "react"
 
-export default function Data() {
+import BudgetTable from "@/components/BudgetTable"
+import ResultsTable from "@/components/ResultsTable"
+
+import { budgets } from "@/data/budget"
+
+const DataPage = (): JSX.Element => {
   return (
     <div className="space-y-12 px-4">
       <section>
@@ -24,4 +27,6 @@ export default function Data() {
       </section>
     </div>
   );
-}
+};
+
+export default DataPage;

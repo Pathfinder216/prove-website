@@ -1,13 +1,13 @@
-export interface LineItem {
+export type LineItem = {
   category: string;
   description: string;
   cost: number;
-}
+};
 
-export interface Budget {
+export type Budget = {
   year: string;
   lineItems: LineItem[];
-}
+};
 
 export const budgets: Budget[] = [
   {
@@ -26,4 +26,4 @@ export const budgets: Budget[] = [
       { category: "Website", description: "Domain name", cost: 35 },
     ]
   }
-]
+];

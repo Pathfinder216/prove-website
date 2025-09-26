@@ -1,11 +1,11 @@
-export interface Results {
+export type Results = {
   year: number;
   location: string;
   topScore: number;
   score: number;
   place: number;
   numTeams: number;
-}
+};
 
 export const results: Results[] = [
   {
@@ -40,4 +40,4 @@ export const results: Results[] = [
     place: 19,
     numTeams: 31,
   },
-]
+];

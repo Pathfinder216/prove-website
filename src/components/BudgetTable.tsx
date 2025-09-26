@@ -1,10 +1,10 @@
-import type { Budget } from "@/data/budget";
+import type { JSX } from "react"
 
-interface BudgetTableProps {
-  budget: Budget;
-}
+import type { Budget } from "@/data/budget"
 
-export function BudgetTable({ budget }: BudgetTableProps) {
+type BudgetTableProps = { budget: Budget; };
+
+const BudgetTable = ({ budget }: BudgetTableProps): JSX.Element => {
   const total = budget.lineItems.reduce((sum, item) => sum + item.cost, 0);
 
   return (
@@ -40,4 +40,6 @@ export function BudgetTable({ budget }: BudgetTableProps) {
       </table>
     </div>
   );
-}
+};
+
+export default BudgetTable;

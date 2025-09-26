@@ -1,17 +1,17 @@
-import { useState } from "react";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { useState, type JSX } from "react"
+import { ChevronLeft, ChevronRight, X } from "lucide-react"
 
-interface GalleryImage {
+type GalleryImage = {
   src: string;
   alt: string;
-}
+};
 
-interface GalleryProps {
+type GalleryProps = {
   title: string;
   images: GalleryImage[];
-}
+};
 
-export default function Gallery({ title, images }: GalleryProps) {
+const Gallery = ({ title, images }: GalleryProps): JSX.Element => {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const openLightbox = (index: number) => setLightboxIndex(index);
@@ -100,4 +100,6 @@ export default function Gallery({ title, images }: GalleryProps) {
       )}
     </section>
   );
-}
+};
+
+export default Gallery;

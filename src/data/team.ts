@@ -1,45 +1,43 @@
-// src/data/team.ts
-
 // 2014-15
-import Team15Img from "../assets/Team_2014-15.jpg"
-import Ben15Img from "../assets/Headshots/Ben_15.jpg"
-import Hannah15Img from "../assets/Headshots/Hannah_15.jpg"
-import John15Img from "../assets/Headshots/John_15.jpg"
-import Natalie15Img from "../assets/Headshots/Natalie_15.jpg"
-import Noah15Img from "../assets/Headshots/Noah_15.jpg"
-import Tim15Img from "../assets/Headshots/Tim_15.jpg"
+import Team15Img from "@/assets/Team_2014-15.jpg"
+import Ben15Img from "@/assets/Headshots/Ben_15.jpg"
+import Hannah15Img from "@/assets/Headshots/Hannah_15.jpg"
+import John15Img from "@/assets/Headshots/John_15.jpg"
+import Natalie15Img from "@/assets/Headshots/Natalie_15.jpg"
+import Noah15Img from "@/assets/Headshots/Noah_15.jpg"
+import Tim15Img from "@/assets/Headshots/Tim_15.jpg"
 
 // 2013-14
-import Team14Img from "../assets/Team_2013-14.jpg"
-import Ben14Img from "../assets/Headshots/Ben_14.jpg"
-import David14Img from "../assets/Headshots/David_14.jpg"
-import Hannah14Img from "../assets/Headshots/Hannah_14.jpg"
-import Natalie14Img from "../assets/Headshots/Natalie_14.jpg"
-import Stephen14Img from "../assets/Headshots/Stephen_14.jpg"
-import Tim14Img from "../assets/Headshots/Tim_14.jpg"
+import Team14Img from "@/assets/Team_2013-14.jpg"
+import Ben14Img from "@/assets/Headshots/Ben_14.jpg"
+import David14Img from "@/assets/Headshots/David_14.jpg"
+import Hannah14Img from "@/assets/Headshots/Hannah_14.jpg"
+import Natalie14Img from "@/assets/Headshots/Natalie_14.jpg"
+import Stephen14Img from "@/assets/Headshots/Stephen_14.jpg"
+import Tim14Img from "@/assets/Headshots/Tim_14.jpg"
 
 // 2012-13
-import Team13Img from "../assets/Team_2012-13.jpg"
-import Ben13Img from "../assets/Headshots/Ben_13.jpg"
-import David13Img from "../assets/Headshots/David_13.jpg"
-import Hannah13Img from "../assets/Headshots/Hannah_13.jpg"
-import Matt13Img from "../assets/Headshots/Matt_13.jpg"
-import Micah13Img from "../assets/Headshots/Micah_13.jpg"
-import Natalie13Img from "../assets/Headshots/Natalie_13.jpg"
-import Stephen13Img from "../assets/Headshots/Stephen_13.jpg"
+import Team13Img from "@/assets/Team_2012-13.jpg"
+import Ben13Img from "@/assets/Headshots/Ben_13.jpg"
+import David13Img from "@/assets/Headshots/David_13.jpg"
+import Hannah13Img from "@/assets/Headshots/Hannah_13.jpg"
+import Matt13Img from "@/assets/Headshots/Matt_13.jpg"
+import Micah13Img from "@/assets/Headshots/Micah_13.jpg"
+import Natalie13Img from "@/assets/Headshots/Natalie_13.jpg"
+import Stephen13Img from "@/assets/Headshots/Stephen_13.jpg"
 
 // 2011-12
-import Team12Img from "../assets/Team_2011-12.jpg"
-import David12Img from "../assets/Headshots/David_12.jpg"
-import Hannah12Img from "../assets/Headshots/Hannah_12.jpg"
-import Matt12Img from "../assets/Headshots/Matt_12.jpg"
-import Micah12Img from "../assets/Headshots/Micah_12.jpg"
-import Natalie12Img from "../assets/Headshots/Natalie_12.jpg"
-import Stephen12Img from "../assets/Headshots/Stephen_12.jpg"
-import Thomas12Img from "../assets/Headshots/Thomas_12.jpg"
-import Tim12Img from "../assets/Headshots/Tim_12.jpg"
+import Team12Img from "@/assets/Team_2011-12.jpg"
+import David12Img from "@/assets/Headshots/David_12.jpg"
+import Hannah12Img from "@/assets/Headshots/Hannah_12.jpg"
+import Matt12Img from "@/assets/Headshots/Matt_12.jpg"
+import Micah12Img from "@/assets/Headshots/Micah_12.jpg"
+import Natalie12Img from "@/assets/Headshots/Natalie_12.jpg"
+import Stephen12Img from "@/assets/Headshots/Stephen_12.jpg"
+import Thomas12Img from "@/assets/Headshots/Thomas_12.jpg"
+import Tim12Img from "@/assets/Headshots/Tim_12.jpg"
 
-export interface TeamMember {
+export type TeamMember = {
   id: string;
   name: string;
   img: string;
@@ -48,14 +46,14 @@ export interface TeamMember {
   yearsOnTeam: string;
   bio: string;
   updated?: string;
-}
+};
 
-export interface TeamYear {
+export type TeamYear = {
   year: string;
   img: string;
   imgMemberOrder: string[];
   members: TeamMember[];
-}
+};
 
 export const teamData: TeamYear[] = [
   {

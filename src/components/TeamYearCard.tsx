@@ -1,13 +1,13 @@
+import type { JSX } from "react"
+
 import { AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
-import type { TeamYear } from "@/data/team";
+import TeamMemberCard from "@/components/TeamMemberCard"
 
-import TeamMemberCard from "./TeamMemberCard";
+import type { TeamYear } from "@/data/team"
 
-interface TeamYearProps {
-  yearData: TeamYear;
-}
+type TeamYearProps = { yearData: TeamYear; };
 
-function TeamYearCard({ yearData }: TeamYearProps) {
+const TeamYearCard = ({ yearData }: TeamYearProps): JSX.Element => {
   const { year, img, imgMemberOrder, members } = yearData;
 
   // Sort members to match the order in imgMemberOrder
@@ -53,7 +53,7 @@ function TeamYearCard({ yearData }: TeamYearProps) {
         </section>
       </AccordionContent>
     </AccordionItem>
-  )
-}
+  );
+};
 
 export default TeamYearCard;

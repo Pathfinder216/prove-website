@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
+import type { JSX } from "react"
+import { Link } from "react-router-dom"
 
 import TeamDQImg from "@/assets/Team_DQ.jpg"
 import Poseidon1Img from "@/assets/Poseidon_1.jpg"
 import TeamMeetingFunnyImg from "@/assets/Team_Meeting_Funny.jpg"
 import VidsYoutube2Img from "@/assets/Vids_Youtube_2.jpg"
 
-interface MediaCardProps {
+type MediaCardProps = {
   href: string;
   imgSrc: string;
   imgAlt: string;
@@ -13,7 +14,7 @@ interface MediaCardProps {
   reverse?: boolean; // flip image/text order
 }
 
-function MediaCard({ href, imgSrc, imgAlt, title, reverse }: MediaCardProps) {
+const MediaCard = ({ href, imgSrc, imgAlt, title, reverse }: MediaCardProps): JSX.Element => {
   return (
     <div
       className={`flex flex-col items-center gap-4 md:flex-row ${reverse ? "md:flex-row-reverse" : ""
@@ -36,9 +37,9 @@ function MediaCard({ href, imgSrc, imgAlt, title, reverse }: MediaCardProps) {
       </div>
     </div>
   );
-}
+};
 
-export default function Media() {
+const MediaPage = (): JSX.Element => {
   return (
     <section className="max-w-5xl mx-auto px-6 py-12 space-y-12">
       <MediaCard
@@ -72,4 +73,6 @@ export default function Media() {
       />
     </section>
   );
-}
+};
+
+export default MediaPage;
