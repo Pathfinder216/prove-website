@@ -94,6 +94,8 @@ const PoseidonPage: React.FC = () => {
               <a
                 href={Report2012}
                 className="text-blue-600 hover:underline"
+                target="_blank"
+                rel="noopenner noreferrer"
               >
                 2012 Technical Report
               </a>
@@ -101,6 +103,8 @@ const PoseidonPage: React.FC = () => {
               <a
                 href={Report2013}
                 className="text-blue-600 hover:underline"
+                target="_blank"
+                rel="noopenner noreferrer"
               >
                 2013 Technical Report
               </a>
@@ -108,6 +112,8 @@ const PoseidonPage: React.FC = () => {
               <a
                 href={Report2014}
                 className="text-blue-600 hover:underline"
+                target="_blank"
+                rel="noopenner noreferrer"
               >
                 2014 Technical Report
               </a>
