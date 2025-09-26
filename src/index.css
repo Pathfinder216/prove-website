@@ -73,11 +73,6 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -190,7 +185,12 @@ button:focus-visible {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+  h1 {
+    @apply font-semibold text-white bg-prove-primary px-6 py-3 rounded-md text-2xl;
   }
 }

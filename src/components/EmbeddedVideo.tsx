@@ -12,7 +12,7 @@ export function EmbeddedVideo({ title, src, thumbnail }: EmbeddedVideoProps) {
 
   return (
     <article className="mb-12 w-full max-w-4xl mx-auto">
-      <h2 className="text-2xl font-semibold mb-4 text-center">{title}</h2>
+      <h1 className="mb-4">{title}</h1>
 
       <div className="relative w-full pt-[56.25%]"> {/* 16:9 aspect ratio */}
         {isPlaying ? (

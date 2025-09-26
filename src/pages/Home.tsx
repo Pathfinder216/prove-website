@@ -5,24 +5,19 @@ import PoseidonPic from '../assets/Poseidon_Crate.jpg'
 function Home() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
-      {/* Team Picture */}
-      <section className="py-8 bg-white shadow-md">
-        <h1 className="text-center">
-          <a href={TeamPic} target="_blank" rel="noopener noreferrer">
-            <img
-              src={TeamPic}
-              alt="Team picture"
-              className="mx-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
-            />
-          </a>
-        </h1>
-      </section>
+      <a href={TeamPic} target="_blank" rel="noopener noreferrer">
+        <img
+          src={TeamPic}
+          alt="Team picture"
+          className="mx-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+        />
+      </a>
 
       {/* Main Content */}
       <section className="main max-w-5xl mx-auto py-12 px-4 md:px-0 grid gap-12 md:grid-cols-2">
         {/* Prove Article */}
-        <article className="bg-white p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-semibold mb-4">Pennsylvania ROV Engineers</h2>
+        <article className="bg-white rounded-lg shadow-lg p-6">
+          <h1 className="mb-4">Pennsylvania ROV Engineers</h1>
           <p className="mb-4">
             We are a group of high school homeschoolers. We have participated in the MATE ROV
             Competition since the 2011-2012 school year. We learned a lot that first year and
@@ -44,7 +39,9 @@ function Home() {
 
         {/* MATE Article */}
         <article className="bg-white p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-semibold mb-4">Marine Advanced Technology Education Center</h2>
+          <h1 className="mb-4 bg-[#59A7F0]">
+            Marine Advanced Technology Education Center
+          </h1>
           <p className="mb-4">
             "The Marine Advanced Technology Education (MATE) Center is a national partnership of
             organizations working to improve marine technical education and in this way help to
@@ -76,16 +73,14 @@ function Home() {
       </section>
 
       {/* Poseidon Picture */}
-      <section className="py-8 bg-white shadow-md">
-        <h1 className="text-center">
-          <a href={PoseidonPic} target="_blank" rel="noopener noreferrer">
-            <img
-              src={PoseidonPic}
-              alt="Picture of our ROV"
-              className="mx-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
-            />
-          </a>
-        </h1>
+      <section className="pb-8 bg-white shadow-md rounded-lg">
+        <a href={PoseidonPic} target="_blank" rel="noopener noreferrer">
+          <img
+            src={PoseidonPic}
+            alt="Picture of our ROV"
+            className="mx-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+          />
+        </a>
         <h3 className="text-center mt-4 text-lg font-medium text-gray-600">
           Poseidon Mk. 3 opening a crate underwater
         </h3>

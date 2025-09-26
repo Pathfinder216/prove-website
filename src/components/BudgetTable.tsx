@@ -9,9 +9,6 @@ export function BudgetTable({ budget }: BudgetTableProps) {
 
   return (
     <div className="overflow-x-auto">
-      <h1 className="text-2xl font-bold mb-4">
-        {budget.year} Budget
-      </h1>
       <table className="min-w-full border border-orange-200 rounded-lg shadow-md">
         <thead className="bg-prove-primary text-slate-100">
           <tr>

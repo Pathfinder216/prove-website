@@ -8,14 +8,17 @@ export default function Data() {
       <section className="px-4 py-8">
         <div className="space-y-12">
           {budgets.map((budget, i) => (
-            <BudgetTable key={i} budget={budget} />
+            <>
+              <h1 className="mb-4">{budget.year} Budget</h1>
+              <BudgetTable key={i} budget={budget} />
+            </>
           ))}
         </div>
       </section>
 
       <section className="px-4 py-8">
         <div className="space-y-12">
-          <h1 className="text-2xl font-bold">Competition Results</h1>
+          <h1>Competition Results</h1>
           <ResultsTable />
         </div>
       </section>
