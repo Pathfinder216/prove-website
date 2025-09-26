@@ -79,20 +79,28 @@ function Header() {
         isOpen && (
           <nav className="md:hidden bg-prove-primary border-gray-200 shadow-sm">
             <ul className="flex flex-col p-4 space-y-2">
-              {links.map(link => (
-                <li key={link.path}>
-                  <Link
-                    to={link.path}
-                    className={`block py-2 px-3 rounded-md ${(currentPath === link.path)
-                      ? "bg-prove-accent text-slate-100"
-                      : "text-slate-100 hover:bg-prove-accent hover:text-slate-100"
-                      }`}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              {links.map(link => {
+                const isCurrentPage = (
+                  (link.path === "/")
+                    ? currentPath === "/"
+                    : currentPath.startsWith(link.path)
+                );
+
+                return (
+                  <li key={link.path}>
+                    <Link
+                      to={link.path}
+                      className={`block py-2 px-3 rounded-md ${isCurrentPage
+                        ? "bg-prove-accent text-slate-100"
+                        : "text-slate-100 hover:bg-prove-accent hover:text-slate-100"
+                        }`}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         )
