@@ -19,10 +19,6 @@ import Mk3ManipImg from "@/assets/Poseidon/Mk3_Manip.jpg"
 import Mk3UnfinImg from "@/assets/Poseidon/Mk3_Unfin.jpg"
 import PressureHousingImg from "@/assets/Poseidon/Pressure_Housing.jpg"
 
-import Report2012 from "@/assets/TechReports/2012.pdf"
-import Report2013 from "@/assets/TechReports/2013.pdf"
-import Report2014 from "@/assets/TechReports/2014.pdf"
-
 
 
 // Page that uses the component
@@ -92,7 +88,7 @@ const PoseidonPage: React.FC = () => {
               very technical, which we do not feel the need to describe at this
               time. For more in-depth information, refer to the{" "}
               <a
-                href={Report2012}
+                href="/public/TechReports/2012.pdf"
                 className="text-blue-600 hover:underline"
                 target="_blank"
                 rel="noopenner noreferrer"
@@ -101,7 +97,7 @@ const PoseidonPage: React.FC = () => {
               </a>
               , the{" "}
               <a
-                href={Report2013}
+                href="/public/TechReports/2013.pdf"
                 className="text-blue-600 hover:underline"
                 target="_blank"
                 rel="noopenner noreferrer"
@@ -110,7 +106,7 @@ const PoseidonPage: React.FC = () => {
               </a>
               , and the{" "}
               <a
-                href={Report2014}
+                href="/public/TechReports/2014.pdf"
                 className="text-blue-600 hover:underline"
                 target="_blank"
                 rel="noopenner noreferrer"
