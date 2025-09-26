@@ -4,24 +4,24 @@ import ResultsTable from "@/components/ResultsTable";
 
 export default function Data() {
   return (
-    <>
-      <section className="px-4 py-8">
-        <div className="space-y-12">
+    <div className="space-y-12 px-4">
+      <section>
+        <div className="space-y-4">
+          <h1>Competition Results</h1>
+          <ResultsTable />
+        </div>
+      </section>
+
+      <section>
+        <div className="space-y-4">
           {budgets.map((budget, i) => (
             <>
-              <h1 className="mb-4">{budget.year} Budget</h1>
+              <h1>{budget.year} Budget</h1>
               <BudgetTable key={i} budget={budget} />
             </>
           ))}
         </div>
       </section>
-
-      <section className="px-4 py-8">
-        <div className="space-y-12">
-          <h1>Competition Results</h1>
-          <ResultsTable />
-        </div>
-      </section>
-    </>
+    </div>
   );
 }

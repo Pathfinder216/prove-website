@@ -7,7 +7,7 @@ const macungie = import.meta.env.VITE_MACUNGIE
 
 export default function Footer() {
   return (
-    <footer className="bg-prove-primary border-t border-gray-200 mt-12 text-slate-100">
+    <footer className="bg-prove-primary border-t border-gray-200 mt-8 text-slate-100">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6">
         <div className={`flex flex-col justify-center items-center gap-y-3 md:flex-row
           md:justify-center md:items-center md:gap-x-4 md:gap-y-0`}>
