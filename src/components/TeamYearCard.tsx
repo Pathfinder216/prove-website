@@ -16,7 +16,6 @@ const TeamYearCard = ({ yearData }: TeamYearProps): JSX.Element => {
   );
 
   return (
-    // TODO: remove tiny line at bottom of non-last accordion items
     <AccordionItem value={yearData.year}>
       <AccordionTrigger className="text-xl font-semibold">
         {yearData.year}
