@@ -86,7 +86,7 @@ const PoseidonPage = (): JSX.Element => {
               very technical, which we do not feel the need to describe at this
               time. For more in-depth information, refer to the{" "}
               <a
-                href="/public/TechReports/2012.pdf"
+                href="/TechReports/2012.pdf"
                 className="text-blue-600 hover:underline"
                 target="_blank"
                 rel="noopenner noreferrer"
@@ -95,7 +95,7 @@ const PoseidonPage = (): JSX.Element => {
               </a>
               , the{" "}
               <a
-                href="/public/TechReports/2013.pdf"
+                href="/TechReports/2013.pdf"
                 className="text-blue-600 hover:underline"
                 target="_blank"
                 rel="noopenner noreferrer"
@@ -104,7 +104,7 @@ const PoseidonPage = (): JSX.Element => {
               </a>
               , and the{" "}
               <a
-                href="/public/TechReports/2014.pdf"
+                href="/TechReports/2014.pdf"
                 className="text-blue-600 hover:underline"
                 target="_blank"
                 rel="noopenner noreferrer"
