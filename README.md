@@ -50,7 +50,7 @@ Paste this config:
 
 ```nginx
 server {
-    listen 8080;
+    listen 80;
     server_name _;
 
     root /var/www/prove-website;
